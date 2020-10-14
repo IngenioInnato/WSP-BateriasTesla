@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "git add -A && git commit -m \"Agregados cambios y mejoras\" && git push",
-    "scss": "sass --watch css"
+    "scss": "sass --watch css",
+    "min": "minify js/main.js > js/main.min.js && minify css/styles.css > css/styles.min.css"
   },
   "repository": {
     "type": "git",

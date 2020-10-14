@@ -1,4 +1,4 @@
-main.jsVue.component('contdown', {
+Vue.component('contdown', {
   template: /*html*/ `
     <div class="contdown pt-5" v-if="(this.remainTime > 0) && (this.simpleCountDown === true) && ((this.restantMinutes - this.minutesExtensionTime) > 0 )">
       <h4>{{remainDays}}D : {{remainHours}}H : {{remainMinutes}}M : {{remainSeconds}}S</h4>
@@ -137,7 +137,7 @@ let app = new Vue({
         SecureToken: "8a9ce791-d13b-44b0-8824-258b13a28660",
         To: 'leads@worldsolarprous.com',
         From: "leads@worldsolarprous.com",
-        Subject: "Nueva Reservación Batería Tesla",
+        Subject: "Nueva Reservación Yeti",
         Body: `
         <h1>Datos dados por el usuario</h1>
         <p>Nombre: ${data.name}. <br>

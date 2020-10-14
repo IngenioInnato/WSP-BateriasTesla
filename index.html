@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BATERÍA TESLA | WORLD SOLAR PRO US</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./css/styles.min.css">
   <meta name="robots" content="index, follow">
   <link rel="shortcut icon" href="./img/logo/isotipo.png" type="image/png">
   <meta http-equiv="X-UA-Compatible" content="IE=7">
@@ -59,6 +59,37 @@
   <!-- End Global site tag (gtag.js) - Google Analytics -->
 </head>
 <body>
+  <div class="layout" id="app">
+    <header id="header">
+      <nav id="menu">
+        <div class="menu__logo">
+          <a href="#S1">
+            <picture>
+              <source srcset="./img/logo/logo-dark.webp" alt="World Solar Pro Logo" class="" type="image/webp">
+              <img src="./img/logo/logo-dark.png" alt="World Solar Pro Logo" class="">
+            </picture>
+          </a>
+        </div>
+        <div class="menu__anchor">
+          <ul class="anchor">
+            <li class="anchor__item"><a href="#S1">Inicio</a></li>
+            <li class="anchor__item"><a href="#S3">Planes</a></li>
+            <li class="anchor__item"><a href="#S5">Testimonios</a></li>
+            <li class="anchor__item"><a href="#S8">Conéctate</a></li>
+            <li class="anchor__item"><a href="#footer">Redes Sociales</a></li>
+          </ul>
+        </div>
+        <div class="menu__burger" id="mobile-burger">
+          <div class="burger" @click="burgerDisplay()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+  
   <script src="./node_modules/vue/dist/vue.js"></script>
   <script src="./js/main.js"></script>
 </body>
