@@ -1,3 +1,4 @@
+AOS.init();
 Vue.component('contdown', {
   template: /*html*/ `
     <div class="contdown pt-5" v-if="(this.remainTime > 0) && (this.simpleCountDown === true) && ((this.restantMinutes - this.minutesExtensionTime) > 0 )">

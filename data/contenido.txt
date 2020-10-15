@@ -1,0 +1,16 @@
+Tesla
+Powerwall 2
+
+
+La batería Tesla posee sensores inteligentes que miden las capacidades de la energía, monitoreando tanto la  carga como la utilización. La batería Tesla  funciona un 100% por ciento autónomo de la red, además, su carga resiste más de siete días luego de un apagón severo.
+
+No se calienta, no hace ruido y es resistente al agua, también permite su manejo a través de la aplicación móvil, la cual podría integrar los paneles solares y recargar los vehículos de motor de la misma marca.
+
+La batería Tesla  es un sistema de batería de CA completamente integrado para uso residencial o comercial ligero. Su batería de iones de litio recargable proporciona almacenamiento de energía para el autoconsumo solar, desplazamiento de carga o uso fuera de la red eléctrica. 
+
+El Gateway controla el funcionamiento del sistema y permite supervisar el uso de energía de forma remota. Gracias a la aplicación de Tesla, puede supervisar el funcionamiento del sistema desde su dispositivo móvil, incluidas las siguientes funciones:
+
+- Uso de energía en tiempo real.
+- Historial de consumo de energía.
+- Cantidades relativas de energía empleada del sistema solar, la red eléctrica y el
+almacenamiento.

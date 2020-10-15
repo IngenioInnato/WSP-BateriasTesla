@@ -60,18 +60,19 @@
 </head>
 <body>
   <div class="layout" id="app">
+    <!-- BEGIN Header -->
     <header id="header">
       <nav id="menu">
         <div class="menu__logo">
           <a href="#S1">
             <picture>
               <source srcset="./img/logo/logo-dark.webp" alt="World Solar Pro Logo" class="" type="image/webp">
-              <img src="./img/logo/logo-dark.png" alt="World Solar Pro Logo" class="">
-            </picture>
-          </a>
-        </div>
-        <div class="menu__anchor">
-          <ul class="anchor">
+                <img src="./img/logo/logo-dark.png" alt="World Solar Pro Logo" class="">
+              </picture>
+            </a>
+          </div>
+          <div class="menu__anchor">
+            <ul class="anchor">
             <li class="anchor__item"><a href="#S1">Inicio</a></li>
             <li class="anchor__item"><a href="#S3">Planes</a></li>
             <li class="anchor__item"><a href="#S5">Testimonios</a></li>
@@ -88,9 +89,42 @@
         </div>
       </nav>
     </header>
+    <!-- END Header -->
+    <!-- BEGIN SECCIÓN 1 -->
+    <section id="S1"></section>
+    <!-- END SECCIÓN 1 -->
+    <!-- BEGIN SECCIÓN 2 -->
+    <section id="S2">
+      <div class="S2__item S2__text--1">
+        <p>La batería Tesla posee sensores inteligentes que miden las capacidades de la energía, monitoreando tanto la  carga como la utilización. La batería Tesla  funciona un 100% por ciento autónomo de la red, además, su carga resiste más de siete días luego de un apagón severo.</p> 
+      </div>
+      <div class="S2__item S2__img text-center" data-aos="fade-up">
+        <img src="./img/tesla-bateria.png" alt="bateria tesla powerwall" class="img-fluid">
+        <h1 class="h5">Batería Tesla Powerwall</h1>
+      </div>
+      <div class="S2__item S2__text--2">
+        <p>No se calienta, no hace ruido y es resistente al agua, también permite su manejo a través de la aplicación móvil, la cual podría integrar los paneles solares y recargar los vehículos de motor de la misma marca.</p>
+      </div>
+    </section>
+    <!-- END SECCIÓN 2 -->
+    <section id="S3">
+      <form class="S3__form contacto" @submit.prevent @submit="getDataForm()">
+        <div class="contacto__title">
+          <h6 class="text-center text-light">¡Obtén tu Tesla Powerwall!</h6>
+        </div>
+        <div class="contacto__input">
+          <input type="text" v-model="form.name" placeholder="Nombre" required>
+          <input type="text" v-model="form.phone" placeholder="Teléfono" required>
+          <input type="email"  v-model="form.email" placeholder="Email" required>
+          <input type="email"  v-model="form.email" placeholder="Email" required>
+          <input type="email"  v-model="form.email" placeholder="Email" required>
+          <input type="submit" value="¡Contáctanos!" class="text-light">
+        </div>
+      </form>
+    </section>
   </div>
-  
   <script src="./node_modules/vue/dist/vue.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="./node_modules/aos/dist/aos.js"></script>
+  <script src="./js/main.min.js"></script>
 </body>
 </html>

@@ -31,6 +31,8 @@
 @import "components/bootstrap";
 @import "components/gallery";
 @import "components/header";
+@import "components/aos";
+@import "components/form";
 
 html,
 body {
@@ -41,4 +43,43 @@ body {
   font-family: $font;
   margin: 0;
   padding: 0;
+}
+
+// Sección 1
+#S1 {
+  background: url(../img/banner.jpg) no-repeat center / cover;
+  height: 40rem;
+}
+
+// Sección 2
+#S2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  padding: 5rem 3rem;
+
+  h1 {
+    color: $blue;
+  }
+
+  @media (max-width: 991.98px) { 
+    grid-template-columns: 1fr;
+    grid-template-areas: "img" "text-1" "text-2";
+    .S2__text--1{
+      grid-area: text-1;
+    }
+    .S2__text--2{
+      grid-area: text-2;
+    }
+    .S2__img{
+      grid-area: img;
+    }
+  }
+}
+
+// Sección 3
+
+#S3 {
+  display: flex;
+  justify-content: center;
 }
