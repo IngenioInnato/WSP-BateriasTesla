@@ -8,7 +8,7 @@
 @media (min-width: 992px) { ... }
 @media (min-width: 1200px) { ... }
 */
-
+// grid-template-areas:"rrss" "logo" "copy";
 @font-face {
   font-family: 'Avenir';
   src: local('Avenir'), local('Avenir'), url('../font/avenir/regular.woff') format('woff');
@@ -33,6 +33,7 @@
 @import "components/header";
 @import "components/aos";
 @import "components/form";
+@import "components/responsive";
 
 html,
 body {
@@ -43,6 +44,9 @@ body {
   font-family: $font;
   margin: 0;
   padding: 0;
+}
+.check {
+  list-style-image: url(../img/icon/check.png);
 }
 
 // Sección 1
@@ -79,7 +83,57 @@ body {
 
 // Sección 3
 
-#S3 {
+#S3, #S6 {
   display: flex;
   justify-content: center;
+}
+
+// Sección 5
+#S5 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding: 5rem 3rem;
+  align-items: center;
+
+  .S5__text {
+    padding: 0 3rem;
+  }
+  @media (max-width: 991.98px) { 
+    grid-template-columns: 1fr;
+    grid-template-areas: "img" "text";
+    .S5__text {
+      grid-area: text;
+      padding: 0;
+
+    }
+    .S5__img {
+      grid-area: img;
+    }
+  }
+}
+
+// Sección 7
+#S7 {
+  grid-area: testimonios;
+  display: grid;
+  gap: 3rem;
+  grid-template-areas: "titulo titulo titulo" "col-1 col-2 col-3";
+  margin: 0 3rem 3rem 3rem;
+
+  .S7__col {
+    padding: 3rem;
+  }
+  @media (max-width: 1199.98px) {
+    grid-template-areas: "titulo" "col-1" "col-2" "col-3";
+    padding: 0;
+    margin: 0 1.5rem 3rem 1.5rem;
+
+    .S7__col {
+      padding: 1.5rem;
+    }
+  }
+}
+
+.S7__titulo {
+  grid-area: titulo;
 }

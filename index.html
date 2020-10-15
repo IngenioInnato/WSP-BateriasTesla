@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BATERÍA TESLA | WORLD SOLAR PRO US</title>
+  <title>TESLA | WORLD SOLAR PRO US</title>
   <link rel="stylesheet" href="./css/styles.min.css">
   <meta name="robots" content="index, follow">
   <link rel="shortcut icon" href="./img/logo/isotipo.png" type="image/png">
@@ -72,9 +72,9 @@
             </a>
           </div>
           <div class="menu__anchor">
-            <ul class="anchor">
-            <li class="anchor__item"><a href="#S1">Inicio</a></li>
-            <li class="anchor__item"><a href="#S3">Planes</a></li>
+            <ul class="anchor pl-0">
+            <li class="anchor__item"><a href="#S2">Inicio</a></li>
+            <li class="anchor__item"><a href="#S3">Formulario</a></li>
             <li class="anchor__item"><a href="#S5">Testimonios</a></li>
             <li class="anchor__item"><a href="#S8">Conéctate</a></li>
             <li class="anchor__item"><a href="#footer">Redes Sociales</a></li>
@@ -95,20 +95,21 @@
     <!-- END SECCIÓN 1 -->
     <!-- BEGIN SECCIÓN 2 -->
     <section id="S2">
-      <div class="S2__item S2__text--1">
+      <div class="S2__item S2__text--1" data-aos="fade-right" data-aos-duration="3000">
         <p>La batería Tesla posee sensores inteligentes que miden las capacidades de la energía, monitoreando tanto la  carga como la utilización. La batería Tesla  funciona un 100% por ciento autónomo de la red, además, su carga resiste más de siete días luego de un apagón severo.</p> 
       </div>
-      <div class="S2__item S2__img text-center" data-aos="fade-up">
+      <div class="S2__item S2__img text-center" data-aos="fade-up" data-aos-duration="2000">
         <img src="./img/tesla-bateria.png" alt="bateria tesla powerwall" class="img-fluid">
         <h1 class="h5">Batería Tesla Powerwall</h1>
       </div>
-      <div class="S2__item S2__text--2">
+      <div class="S2__item S2__text--2" data-aos="fade-left" data-aos-duration="3000">
         <p>No se calienta, no hace ruido y es resistente al agua, también permite su manejo a través de la aplicación móvil, la cual podría integrar los paneles solares y recargar los vehículos de motor de la misma marca.</p>
       </div>
     </section>
     <!-- END SECCIÓN 2 -->
+    <!-- BEGIN SECCIÓN 3 -->
     <section id="S3">
-      <form class="S3__form contacto" @submit.prevent @submit="getDataForm()">
+      <form class="S3__form contacto" @submit.prevent @submit="getDataForm()" data-aos="fade-up" data-aos-duration="2000">
         <div class="contacto__title">
           <h6 class="text-center text-light">¡Obtén tu Tesla Powerwall!</h6>
         </div>
@@ -116,12 +117,109 @@
           <input type="text" v-model="form.name" placeholder="Nombre" required>
           <input type="text" v-model="form.phone" placeholder="Teléfono" required>
           <input type="email"  v-model="form.email" placeholder="Email" required>
-          <input type="email"  v-model="form.email" placeholder="Email" required>
-          <input type="email"  v-model="form.email" placeholder="Email" required>
+          <input type="text"  v-model="form.pueblo" placeholder="Pueblo" required>
+          <input type="text"  v-model="form.factura" placeholder="Factura de Luz" required>
           <input type="submit" value="¡Contáctanos!" class="text-light">
         </div>
       </form>
     </section>
+    <!-- END SECCIÓN 3 -->
+    <!-- BEGIN SECCIÓN 4 -->
+    <section id="S4" class="d-flex flex-column mt-5">
+      <h6 class="text-center pb-2">Promoción válida por:</h6>
+      <contdown deadline="Dec 30 2020 13:00 GMT-0400" simple-count-down="false" final-message="Oferta Agotada"></contdown>
+    </section>
+    <!-- END SECCIÓN 4 -->
+    <!-- BEGIN SECCIÓN 5 -->
+    <section id="S5">
+      <div class="S5__item S5__text" data-aos="fade-left" data-aos-duration="3000">
+        <p>La batería Tesla  es un sistema de batería de CA completamente integrado para uso residencial o comercial ligero. Su batería de iones de litio recargable proporciona almacenamiento de energía para el autoconsumo solar, desplazamiento de carga o uso fuera de la red eléctrica.<br><br>
+        El Gateway controla el funcionamiento del sistema y permite supervisar el uso de energía de forma remota. Gracias a la aplicación de Tesla, puede supervisar el funcionamiento del sistema desde su dispositivo móvil, incluidas las siguientes funciones:
+        </p>
+        <ul class="check pl-0">
+          <li><p style="display: inline;">Uso de energía en tiempo real.</p></li>
+          <li><p style="display: inline;">Historial de consumo de energía.</p></li>
+          <li><p style="display: inline;">Cantidades relativas de energía empleada del sistema solar, la red eléctrica y el almacenamiento.</p></li>
+        </ul>
+      </div>
+      <div class="S5__item S5__img" data-aos="fade-right" data-aos-duration="3000">
+        <img src="./img/pura-energia-arte.jpg" alt="pura energia tesla" class="img-fluid box-shadow">
+      </div>
+    </section>
+    <!-- END SECCIÓN 5 -->
+    <section id="S6" class="mb-5">
+      <form class="S6__form contacto" @submit.prevent @submit="getDataForm()" data-aos="fade-up" data-aos-duration="2000">
+        <div class="contacto__title">
+          <h6 class="text-center text-light">¡Qué esperas para obtener tus equipos Tesla!</h6>
+        </div>
+        <div class="contacto__input">
+          <input type="text" v-model="form.name" placeholder="Nombre" required>
+          <input type="text" v-model="form.phone" placeholder="Teléfono" required>
+          <input type="email"  v-model="form.email" placeholder="Email" required>
+          <input type="text"  v-model="form.pueblo" placeholder="Pueblo" required>
+          <input type="text"  v-model="form.factura" placeholder="Factura de Luz" required>
+          <input type="submit" value="¡Contáctanos!" class="text-light">
+        </div>
+      </form>
+    </section>
+    <section id="S7">
+      <h6 class="S7__titulo text-center mb-2">Testimonios</h6>
+      <div class="S7__col col--2 border-rounded p-5 text-center" data-aos="fade-up" data-aos-duration="3000">
+        <picture>
+          <source srcset=" ./img/testimonio/angelica-castillo.webp " type="image/webp " alt="Sofia Torres " class="rounded-circle">
+          <img src="./img/testimonio/angelica-castillo.jpg " alt="Sofia Torres " class="rounded-circle">
+        </picture>
+        <h6 class="text-light_blue py-3">Angélica<br>Castillo</h6>
+        <p>Me siento muy cómoda tranquila con mi Goal Yeti. Ya no me preocupa que se vaya la luz.</p>
+      </div>
+      <div class="S7__col col--1 border-rounded p-5 text-center" data-aos="fade-up" data-aos-duration="3000">
+        <picture>
+          <source srcset=" ./img/testimonio/sofia-torres.webp " type="image/webp " alt="Sofia Torres " class="rounded-circle">
+          <img src="./img/testimonio/sofia-torres.jpg " alt="Sofia Torres " class="rounded-circle">
+        </picture>
+        <h6 class="text-light_blue py-3">Sofía<br>Torres</h6>
+        <p>Siento que hice una buena compra. Durante la temporada de huracanes podré conectar los aparatos básicos en mi hogar.</p>
+      </div>
+      <div class="S7__col col--3 border-rounded p-5 text-center" data-aos="fade-up" data-aos-duration="3000">
+        <picture>
+          <source srcset=" ./img/testimonio/fernando-rodriguez.webp " type="image/webp " alt="Sofia Torres " class="rounded-circle ">
+          <img src="./img/testimonio/fernando-rodriguez.jpg " alt="Sofia Torres " class="rounded-circle ">
+        </picture>
+        <h6 class="text-light_blue py-3 ">Fernando<br>Rodríguez</h6>
+        <p> ¡Es muy práctico! lo subo a mi camioneta y voy de camping con mis hijos.</p>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="footer__copy ">
+        World Solar Pro LLC. {{new Date().getFullYear()}}
+        <br>Todos los derechos resevados.</div>
+      <div class="footer__logo ">
+        <picture>
+          <source srcset="./img/logo/logo-light.webp " alt="World Solar Pro Logo " class="img-fluid" type="image/webp ">
+          <img src="./img/logo/logo-light.png " alt="World Solar Pro Logo " class="img-fluid">
+        </picture>
+      </div>
+      <div class="footer__rrss ">
+        <a class="rrss--fb img-fluid " href="https://www.facebook.com/WorldSolarProUS/ " target="_blank ">
+          <picture>
+            <source srcset="./img/rrss/fb.webp " type="image/webp " alt="Facebook " title="Facebook " class="img-fluid ">
+            <img src="./img/rrss/fb.png " alt="Facebook " title="Facebook " class="img-fluid ">
+          </picture>
+        </a>
+        <a class="rrss--ig " href="https://www.instagram.com/worldsolarprous/ " target="_blank ">
+          <picture>
+            <source srcset="./img/rrss/ig.webp " type="image/webp " alt="Instagram " title="Instagram " class="img-fluid ">
+            <img src="./img/rrss/ig.png " alt="Instagram " title="Instagram " class="img-fluid ">
+          </picture>
+        </a>
+        <a class="rrss--tw " href="https://www.twitter.com/worldsolarprous/ " target="_blank ">
+          <picture>
+            <source srcset="./img/rrss/tw.webp " type="image/webp " alt="Twitter " title="Twitter " class="img-fluid ">
+            <img src="./img/rrss/tw.png " alt="Twitter " title="Twitter " class="img-fluid ">
+          </picture>
+        </a>
+      </div>
+    </footer>
   </div>
   <script src="./node_modules/vue/dist/vue.js"></script>
   <script src="./node_modules/aos/dist/aos.js"></script>

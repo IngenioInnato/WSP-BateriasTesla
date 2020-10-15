@@ -1,7 +1,7 @@
 AOS.init();
 Vue.component('contdown', {
   template: /*html*/ `
-    <div class="contdown pt-5" v-if="(this.remainTime > 0) && (this.simpleCountDown === true) && ((this.restantMinutes - this.minutesExtensionTime) > 0 )">
+    <div class="contdown pt-5" v-if="(this.remainTime > 0) && (this.simpleCountDown === 'true') && ((this.restantMinutes - this.minutesExtensionTime) > 0 )">
       <h4>{{remainDays}}D : {{remainHours}}H : {{remainMinutes}}M : {{remainSeconds}}S</h4>
     </div>
 
@@ -46,9 +46,9 @@ Vue.component('contdown', {
       required: true
     }, 
     'simpleCountDown': {
-      type: Boolean,
+      type: String,
       required: false,
-      default: true,
+      default: false,
     }, 
     'minutesExtensionTime': {
       type: Number,
@@ -112,9 +112,10 @@ let app = new Vue({
     form: {
       name: '',
       phone: '',
-      email: ''
+      email: '',
+      pueblo: '',
+      factura: '',
     },
-    ftab_active: true,
     burger_active: false
   },
   methods: {
@@ -143,7 +144,8 @@ let app = new Vue({
         <h1>Datos dados por el usuario</h1>
         <p>Nombre: ${data.name}. <br>
         Teléfono: ${data.phone}. <br>
-        Email: ${data.email}.
+        Pueblo: ${data.pueblo}.<br>
+        Factura de luz: ${data.factura}.<br>
         </p>
         `
       }).then(

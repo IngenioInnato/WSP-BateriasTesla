@@ -14,3 +14,5 @@ El Gateway controla el funcionamiento del sistema y permite supervisar el uso de
 - Historial de consumo de energía.
 - Cantidades relativas de energía empleada del sistema solar, la red eléctrica y el
 almacenamiento.
+
+Placas Solares y baterías Tesla. Por favor  usar el arte que dice : 0% inversión 25 años de garantía en las baterías . 
