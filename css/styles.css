@@ -2,7 +2,8 @@
 /* BreakPoints 
 @media (max-width: 575.98px) { ... }
 @media (max-width: 767.98px) { ... }
-@media (max-width: 1199.98px) { ... }
+@media (max-width: 991.98px) { ... }
+@media (max-width: 1199.98px){ ... }
 
 @media (min-width: 576px) { ... }
 @media (min-width: 768px) { ... }
@@ -5392,6 +5393,11 @@ body {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 991.98px) {
+  #S3, #S6 {
+    margin: 0 0.8rem;
+  }
+}
 
 #S5 {
   display: grid;
@@ -5430,7 +5436,7 @@ body {
   #S7 {
     grid-template-areas: "titulo" "col-1" "col-2" "col-3";
     padding: 0;
-    margin: 0 1.5rem 3rem 1.5rem;
+    margin: 3rem 1.5rem 3rem 1.5rem;
   }
   #S7 .S7__col {
     padding: 1.5rem;

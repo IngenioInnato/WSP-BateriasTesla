@@ -125,7 +125,7 @@ let app = new Vue({
       formulario.forEach(el => {
         el.innerHTML = /*html*/ `
           <div class="bg-light_blue p-5 text-center">
-            <h2 class="text-white">¡Gracias por tu Reserva!</h2>
+            <h6 class="text-white">¡Gracias por tu Reserva!</h6>
             <p class="text-white">En breves momentos te contactaremos</p>
           </div>
         `;
@@ -139,11 +139,12 @@ let app = new Vue({
         SecureToken: "8a9ce791-d13b-44b0-8824-258b13a28660",
         To: 'leads@worldsolarprous.com',
         From: "leads@worldsolarprous.com",
-        Subject: "Nueva Reservación Yeti",
+        Subject: "Nueva Reservación Tesla",
         Body: `
         <h1>Datos dados por el usuario</h1>
         <p>Nombre: ${data.name}. <br>
         Teléfono: ${data.phone}. <br>
+        Email: ${data.email}. <br>
         Pueblo: ${data.pueblo}.<br>
         Factura de luz: ${data.factura}.<br>
         </p>
