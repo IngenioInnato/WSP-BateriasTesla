@@ -52,39 +52,129 @@ body {
 
 // Sección 1
 #S1 {
-  background: url(../img/banner.jpg) no-repeat center / cover;
+  background: url(../img/tesla-banner.jpg) no-repeat center / cover;
   height: 40rem;
+  @media (max-width: 991.98px) {
+    background: url(../img/banner.jpg) no-repeat center / cover;
+  }
 }
-
 // Sección 2
 #S2 {
+  display: grid;
+  grid-template-areas: "title" "form" "icon";
+  justify-content: center;
+  padding: 5rem 0;
+  margin: 0 .8rem;
+
+  .S2__title {
+    grid-area: title;
+  }
+  .S2__form {
+    margin: 3rem auto;
+    grid-area: form;
+  }
+  .S2__icons {
+    display: grid;
+    grid-template-areas: "uno    uno    dos    dos   tres  tres" 
+                         "cuatro cuatro cuatro cinco cinco cinco";
+    justify-items: center;
+    grid-gap: 1rem;
+    @media (max-width: 991.98px) { 
+      grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco";
+    }
+  }
+  .S2__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .S2__icon--1{
+   grid-area: uno; 
+  }
+  .S2__icon--2{
+   grid-area: dos; 
+  }
+  .S2__icon--3{
+   grid-area: tres; 
+  }
+  .S2__icon--4{
+   grid-area: cuatro; 
+  }
+  .S2__icon--5{
+   grid-area: cinco; 
+  }
+}
+// Sección 3
+#S3 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding: 0 3rem 5rem 3rem;
+  align-items: center;
+
+  .S3__text {
+    padding: 0 3rem;
+  }
+  @media (max-width: 991.98px) { 
+    grid-template-columns: 1fr;
+    grid-template-areas: "img" "text";
+    .S3__text {
+      grid-area: text;
+      padding: 0;
+
+    }
+    .S3__img {
+      grid-area: img;
+    }
+  }
+}
+// Sección 4
+#S4 {
+  display: grid;
+  grid-template-areas: "title title" "team1 team2";
+  text-align: center;
+  .S4__title {
+    grid-area: title;
+  }
+  .S4__img--1 {
+    grid-area: team1;
+  }
+  .S4__img--2 {
+    grid-area: team2;
+  }
+  @media (max-width: 991.98px) { 
+    grid-template-areas: "title" "team1" "team2";
+  }
+}
+
+// Sección 5
+#S5, #S6{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   padding: 5rem 3rem;
 
-  h1 {
+  h5 {
     color: $blue;
   }
 
   @media (max-width: 991.98px) { 
     grid-template-columns: 1fr;
     grid-template-areas: "img" "text-1" "text-2";
-    .S2__text--1{
+    .S5__text--1, .S6__text--1 {
       grid-area: text-1;
     }
-    .S2__text--2{
+    .S5__text--2, .S6__text--2 {
       grid-area: text-2;
     }
-    .S2__img{
+    .S5__img, .S6__img{
       grid-area: img;
     }
   }
 }
 
-// Sección 3
+// // Sección 3
 
-#S3, #S6 {
+#S7, #S10 {
   display: flex;
   justify-content: center;
   @media (max-width: 991.98px) { 
@@ -92,39 +182,39 @@ body {
   }
 }
 
-// Sección 5
-#S5 {
+// Sección 8
+#S9 {
   display: grid;
   grid-template-columns: 3fr 2fr;
   padding: 5rem 3rem;
   align-items: center;
 
-  .S5__text {
+  .S9__text {
     padding: 0 3rem;
   }
   @media (max-width: 991.98px) { 
     grid-template-columns: 1fr;
     grid-template-areas: "img" "text";
-    .S5__text {
+    .S9__text {
       grid-area: text;
       padding: 0;
 
     }
-    .S5__img {
+    .S9__img {
       grid-area: img;
     }
   }
 }
 
-// Sección 7
-#S7 {
+// Sección 9
+#S11 {
   grid-area: testimonios;
   display: grid;
   gap: 3rem;
   grid-template-areas: "titulo titulo titulo" "col-1 col-2 col-3";
   margin: 0 3rem 3rem 3rem;
 
-  .S7__col {
+  .S11__col {
     padding: 3rem;
   }
   @media (max-width: 1199.98px) {
@@ -132,12 +222,12 @@ body {
     padding: 0;
     margin: 3rem 1.5rem 3rem 1.5rem;
 
-    .S7__col {
+    .S11__col {
       padding: 1.5rem;
     }
   }
 }
 
-.S7__titulo {
+.S11__titulo {
   grid-area: titulo;
 }
